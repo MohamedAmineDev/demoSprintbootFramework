@@ -7,7 +7,7 @@ import org.springframework.stereotype.Repository;
 import java.util.List;
 
 @Repository("studentDAO")
-public class StudientDao implements IStudientDao {
+public abstract class StudientDao implements IStudientDao {
     private final List<Studient> studients;
 
     public StudientDao(List<Studient> studients) {

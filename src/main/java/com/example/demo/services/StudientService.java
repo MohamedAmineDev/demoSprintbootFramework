@@ -14,8 +14,13 @@ import java.util.List;
 public class StudientService implements IStudientsServices {
     private final IStudientDao database;
 
-    @Autowired
+    /*@Autowired
     public StudientService(@Qualifier("studentDAO") IStudientDao database) {
+        this.database = database;
+    }*/
+    /*OracleStudentDAO*/
+    @Autowired
+    public StudientService(@Qualifier("OracleStudentDAO") IStudientDao database) {
         this.database = database;
     }
 
